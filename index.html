@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福井県 旅程づくり仕事体験</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Home画面: スタートページ -->
+        <section id="screen-home" class="screen active">
+            <div class="start-screen">
+                <h1>🗺️ 旅程づくり仕事体験</h1>
+                <p class="subtitle">旅行会社になって、お客さんの希望にぴったりの旅行を作ろう！</p>
+                <button id="btn-start" class="btn btn-primary btn-large">スタート</button>
+            </div>
+        </section>
+
+        <!-- Interview画面: ヒアリング -->
+        <section id="screen-interview" class="screen">
+            <div class="interview-layout">
+                <!-- 左側: 固定エリア -->
+                <div class="interview-sidebar">
+                    <div class="sidebar-content">
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill"></div>
+                        </div>
+                        
+                        <div id="customer-hint" class="customer-hint">
+                            <!-- お客さんの要望を表示 -->
+                        </div>
+                    </div>
+                    
+                    <!-- サイドバー内のボタンエリア -->
+                    <div class="interview-sidebar-actions">
+                        <button id="btn-back" class="btn btn-secondary btn-small">← 一つ前に戻る</button>
+                        <button id="btn-restart-interview" class="btn btn-secondary btn-small">🔄 最初からやり直す</button>
+                    </div>
+                </div>
+                
+                <!-- 右側: スクロールエリア -->
+                <div class="interview-main">
+                    <h2 id="interview-title" class="interview-title"></h2>
+                    
+                    <div id="place-cards" class="place-cards">
+                        <!-- 選択肢カード -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plan画面: タイムライン表示 -->
+        <section id="screen-plan" class="screen">
+            <div class="container">
+                <h1>📅 今日の旅程</h1>
+                <p class="subtitle">あなたが作った旅程プランです</p>
+                
+                <div id="timeline" class="timeline">
+                    <!-- タイムライン項目 -->
+                </div>
+                
+                <button id="btn-to-result" class="btn btn-primary">評価を見る</button>
+            </div>
+        </section>
+
+        <!-- Result画面: スコアと改善ヒント -->
+        <section id="screen-result" class="screen">
+            <div class="container">
+                <h1>✨ 評価結果</h1>
+                
+                <div id="score-display" class="score-display">
+                    <!-- スコア表示 -->
+                </div>
+                
+                <div id="feedback" class="feedback">
+                    <!-- 改善ヒント -->
+                </div>
+                
+                <button id="btn-restart" class="btn btn-primary">もう一回挑戦する</button>
+            </div>
+        </section>
+
+        <!-- モーダル: 詳細と深掘り質問 -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div id="modal-body">
+                    <!-- モーダル内容 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- エラー表示 -->
+        <div id="error-message" class="error-message" style="display:none;">
+            <p></p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
