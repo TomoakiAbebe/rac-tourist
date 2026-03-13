@@ -204,12 +204,6 @@ function showCategoryQuestion() {
     const category = categories[currentCategoryIndex];
     const categoryName = categoryNames[category];
     
-    // スクロールを一番上に戻す
-    const mainArea = document.querySelector('.interview-main');
-    if (mainArea) {
-        mainArea.scrollTop = 0;
-    }
-    
     // カテゴリに応じた具体的なヒントを左側に表示
     updateCustomerHint();
     
@@ -223,7 +217,7 @@ function showCategoryQuestion() {
 function renderPlaceCards(categoryPlaces) {
     const container = document.getElementById('place-cards');
     container.innerHTML = categoryPlaces.map(place => `
-        <div class="place-card" data-place-id="${place.id}" onclick="showDetailModal('${place.id}')" style="cursor: pointer;">
+        <div class="place-card" data-place-id="${place.id}">
             <div class="place-card-image">
                 ${place.photo ? `<img src="${place.photo}" alt="${place.name}" onerror="this.style.display='none'">` : '🏞️'}
             </div>
@@ -236,6 +230,7 @@ function renderPlaceCards(categoryPlaces) {
                     <span class="meta-tag">💰 ${place.costYen}円${place.costYen === 0 ? '(無料)' : ''}</span>
                     ${place.rainyOk ? '<span class="meta-tag highlight">☔雨OK</span>' : ''}
                 </div>
+                <button class="btn btn-secondary" onclick="showDetailModal('${place.id}')">詳細を見る</button>
             </div>
         </div>
     `).join('');
@@ -259,11 +254,17 @@ function showDetailModal(placeId) {
         <p>${place.detail}</p>
         
         <div class="modal-actions" style="display: flex; gap: 15px; margin-top: 30px; justify-content: center;">
+            <button id="btn-close-modal" class="btn btn-secondary">カードを閉じる</button>
             <button id="btn-confirm-selection" class="btn btn-primary">確定する</button>
         </div>
     `;
     
     modal.classList.add('active');
+    
+    // 「カードを閉じる」ボタンのイベント
+    document.getElementById('btn-close-modal').addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
     
     // 「確定する」ボタンのイベント
     document.getElementById('btn-confirm-selection').addEventListener('click', () => {

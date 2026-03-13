@@ -2,20 +2,40 @@
   {
     "id": "morning_001",
     "category": "morning",
-    "name": "東尋坊",
+    "name": "とうじんぼう",
     "photo": "assets/01.jpg",
-    "description": "断崖絶壁の絶景スポット。日本海の荒波が作った自然の芸術です。",
-    "detail": "東尋坊は、福井県を代表する景勝地で、日本海の荒波によって形成された柱状節理の断崖が約1kmにわたって続きます。海面から高さ約25メートルの断崖絶壁は圧巻で、遊覧船に乗って海から眺めることもできます。晴れた日には遠く能登半島まで見渡せます。",
+    "description": "日本海の大きながけを見られる人気スポット。",
+    "detail": "とうじんぼうは福井県を代表する名所です。海のあら波でできた岩のがけが約1km続きます。遊覧船に乗って海から見ることもでき、天気がよい日は遠くまで見わたせます。",
     "age": "10+",
     "durationMin": 90,
     "costYen": 0,
     "rainyOk": false,
-    "tags": ["nature", "view", "photo", "outdoor"],
-    "deepQuestion": "ここではどんな過ごし方がいい？",
+    "tags": [
+      "nature",
+      "view",
+      "photo",
+      "outdoor"
+    ],
+    "deepQuestion": "ここでどう過ごしたい？",
     "deepOptions": [
-      {"label": "景色をじっくり見たい", "addTags": ["quiet"]},
-      {"label": "写真をたくさん撮りたい", "addTags": ["photo"]},
-      {"label": "遊覧船にも乗りたい", "addTags": ["active"]}
+      {
+        "label": "けしきをじっくり見たい",
+        "addTags": [
+          "quiet"
+        ]
+      },
+      {
+        "label": "写真をたくさん取りたい",
+        "addTags": [
+          "photo"
+        ]
+      },
+      {
+        "label": "遊覧船にも乗りたい",
+        "addTags": [
+          "active"
+        ]
+      }
     ]
   },
   {
@@ -23,75 +43,162 @@
     "category": "morning",
     "name": "永平寺",
     "photo": "assets/02.jpg",
-    "description": "曹洞宗の大本山。静寂な空間で心が落ち着きます。",
-    "detail": "永平寺は、1244年に道元禅師によって開かれた曹洞宗の大本山です。樹齢700年を超える杉木立に囲まれた境内には、70以上の建物が連なり、今も200名を超える修行僧が厳しい修行を行っています。静寂な空間で、座禅体験もできます。",
+    "description": "静かな空気の中で、心が落ち着くお寺。",
+    "detail": "永平寺は1244年に開かれたお寺です。木にかこまれた広いけいだいには多くの建物があり、今も修行する人が生活しています。見学やざぜん体験ができます。",
     "age": "10+",
     "durationMin": 120,
     "costYen": 500,
     "rainyOk": true,
-    "tags": ["history", "culture", "quiet", "learn", "indoor"],
+    "tags": [
+      "history",
+      "culture",
+      "quiet",
+      "learn",
+      "indoor"
+    ],
     "deepQuestion": "永平寺でどんな体験がしたい？",
     "deepOptions": [
-      {"label": "じっくり見学したい", "addTags": ["museum_long"]},
-      {"label": "座禅を体験したい", "addTags": ["learn", "quiet"]},
-      {"label": "写真を撮りたい", "addTags": ["photo"]}
+      {
+        "label": "じっくり見学したい",
+        "addTags": [
+          "museum_long"
+        ]
+      },
+      {
+        "label": "ざぜんを体験したい",
+        "addTags": [
+          "learn",
+          "quiet"
+        ]
+      },
+      {
+        "label": "写真を取りたい",
+        "addTags": [
+          "photo"
+        ]
+      }
     ]
   },
   {
     "id": "morning_003",
     "category": "morning",
-    "name": "福井県立恐竜博物館",
+    "name": "福井県立きょうりゅう博物館",
     "photo": "assets/03.jpg",
-    "description": "恐竜の化石や模型がいっぱい！世界三大恐竜博物館の一つです。",
-    "detail": "世界三大恐竜博物館の一つに数えられる、恐竜専門の博物館です。44体もの恐竜全身骨格や、動く恐竜模型、化石発掘体験など、見どころ満載。福井県で発見された恐竜「フクイサウルス」「フクイラプトル」の化石も展示されています。",
+    "description": "きょうりゅうのかせきや模型がいっぱいの博物館。",
+    "detail": "世界でも有名なきょうりゅう博物館です。大きな全身骨格や動く模型があり、見ごたえがあります。福井で見つかったきょうりゅうのかせきも展示されています。",
     "age": "6+",
     "durationMin": 150,
     "costYen": 730,
     "rainyOk": true,
-    "tags": ["museum", "learn", "family", "indoor", "photo"],
-    "deepQuestion": "恐竜博物館でどう過ごす？",
+    "tags": [
+      "museum",
+      "learn",
+      "family",
+      "indoor",
+      "photo"
+    ],
+    "deepQuestion": "きょうりゅう博物館でどう過ごす？",
     "deepOptions": [
-      {"label": "じっくり全部見たい", "addTags": ["museum_long"]},
-      {"label": "化石発掘体験したい", "addTags": ["active", "craft"]},
-      {"label": "恐竜と写真を撮りたい", "addTags": ["photo"]}
+      {
+        "label": "じっくり全部見たい",
+        "addTags": [
+          "museum_long"
+        ]
+      },
+      {
+        "label": "かせき発くつ体験したい",
+        "addTags": [
+          "active",
+          "craft"
+        ]
+      },
+      {
+        "label": "きょうりゅうと写真を取りたい",
+        "addTags": [
+          "photo"
+        ]
+      }
     ]
   },
   {
     "id": "morning_004",
     "category": "morning",
-    "name": "一乗谷朝倉氏遺跡",
+    "name": "一乗谷朝倉氏いせき",
     "photo": "assets/04.jpg",
-    "description": "戦国時代の城下町がそのまま残る歴史スポット。",
-    "detail": "戦国時代、朝倉氏が103年間にわたって支配した城下町の遺跡です。当時の町並みが復元され、武家屋敷や町屋を見学できます。発掘調査では、金箔瓦や中国製の陶磁器など、当時の繁栄を物語る出土品が数多く見つかっています。",
+    "description": "戦国時代の城下町あとを見学できる歴史スポット。",
+    "detail": "朝倉氏が治めた城下町あとです。町なみや武家屋しきなどが一部復元され、当時のくらしを学べます。歩きながら歴史を感じられます。",
     "age": "10+",
     "durationMin": 100,
     "costYen": 330,
     "rainyOk": false,
-    "tags": ["history", "culture", "learn", "outdoor", "photo"],
-    "deepQuestion": "どんな風に楽しみたい？",
+    "tags": [
+      "history",
+      "culture",
+      "learn",
+      "outdoor",
+      "photo"
+    ],
+    "deepQuestion": "どんなふうに楽しみたい？",
     "deepOptions": [
-      {"label": "歴史を詳しく知りたい", "addTags": ["museum_long"]},
-      {"label": "復元町並みを散策したい", "addTags": ["quiet"]},
-      {"label": "武家屋敷で写真を撮りたい", "addTags": ["photo"]}
+      {
+        "label": "歴史をくわしく知りたい",
+        "addTags": [
+          "museum_long"
+        ]
+      },
+      {
+        "label": "復元町なみを散歩したい",
+        "addTags": [
+          "quiet"
+        ]
+      },
+      {
+        "label": "武家屋しきで写真を取りたい",
+        "addTags": [
+          "photo"
+        ]
+      }
     ]
   },
   {
     "id": "morning_005",
     "category": "morning",
-    "name": "越前松島水族館",
+    "name": "えちぜん松島水族館",
     "photo": "assets/05.jpg",
-    "description": "イルカやペンギンと触れ合える体験型水族館。",
-    "detail": "「見る・触れる・学ぶ」をテーマにした体験型水族館です。イルカショー、ペンギンのお散歩、サメやエイに触れるタッチプールなど、海の生き物と間近で触れ合えます。海洋館の巨大水槽では、福井の海に住む魚たちが悠々と泳いでいます。",
+    "description": "イルカやペンギンと近くでふれあえる水族館。",
+    "detail": "見る・ふれる・学ぶがテーマの水族館です。イルカショーやタッチプールがあり、海の生き物を近くで見られます。大きな水そうも人気です。",
     "age": "3+",
     "durationMin": 120,
     "costYen": 2000,
     "rainyOk": true,
-    "tags": ["family", "learn", "active", "indoor", "photo"],
+    "tags": [
+      "family",
+      "learn",
+      "active",
+      "indoor",
+      "photo"
+    ],
     "deepQuestion": "水族館で何をしたい？",
     "deepOptions": [
-      {"label": "イルカショーを見たい", "addTags": ["active"]},
-      {"label": "生き物に触れたい", "addTags": ["craft", "learn"]},
-      {"label": "ゆっくり見学したい", "addTags": ["quiet"]}
+      {
+        "label": "イルカショーを見たい",
+        "addTags": [
+          "active"
+        ]
+      },
+      {
+        "label": "生き物にふれたい",
+        "addTags": [
+          "craft",
+          "learn"
+        ]
+      },
+      {
+        "label": "ゆっくり見学したい",
+        "addTags": [
+          "quiet"
+        ]
+      }
     ]
   },
   {
@@ -99,132 +206,264 @@
     "category": "morning",
     "name": "芝政ワールド",
     "photo": "assets/06.jpg",
-    "description": "プールやアトラクションがいっぱいのテーマパーク。",
-    "detail": "日本海を望む総合レジャーランドです。夏は巨大なプール「カリビアンビーチ」、通年で楽しめるゴーカートやジェットコースターなどのアトラクション、恐竜の森など、一日中遊べる施設が揃っています。",
+    "description": "プールや乗り物で一日中遊べるテーマパーク。",
+    "detail": "日本海の近くにある大型レジャー施設です。夏の大きなプールや、ゴーカートなどのアトラクションを楽しめます。家族で体を動かしたい日にぴったりです。",
     "age": "3+",
     "durationMin": 180,
     "costYen": 1500,
     "rainyOk": false,
-    "tags": ["active", "family", "outdoor"],
+    "tags": [
+      "active",
+      "family",
+      "outdoor"
+    ],
     "deepQuestion": "何をメインに楽しみたい？",
     "deepOptions": [
-      {"label": "アトラクションを楽しむ", "addTags": ["active"]},
-      {"label": "ゆっくり散策したい", "addTags": ["quiet"]},
-      {"label": "写真をたくさん撮りたい", "addTags": ["photo"]}
+      {
+        "label": "アトラクションを楽しむ",
+        "addTags": [
+          "active"
+        ]
+      },
+      {
+        "label": "ゆっくり散歩したい",
+        "addTags": [
+          "quiet"
+        ]
+      },
+      {
+        "label": "写真をたくさん取りたい",
+        "addTags": [
+          "photo"
+        ]
+      }
     ]
   },
   {
     "id": "lunch_001",
     "category": "lunch",
-    "name": "越前そば（永平寺門前）",
+    "name": "えちぜんそば（永平寺門前）",
     "photo": "assets/07.jpg",
-    "description": "福井名物のおろしそば。大根おろしとかつお節がたっぷり。",
-    "detail": "福井県の代表的な郷土料理「越前おろしそば」。石臼挽きのそば粉を使った香り高いそばに、辛味大根のおろしとかつお節をたっぷりかけていただきます。さっぱりした味わいで、子どもから大人まで人気です。",
+    "description": "福井名物のおろしそば。大根おろしでさっぱり。",
+    "detail": "えちぜんおろしそばは福井の郷土料理です。そばに大根おろしとかつおぶしをのせて食べます。さっぱりした味で、子どもにも食べやすいです。",
     "age": "6+",
     "durationMin": 60,
     "costYen": 1000,
     "rainyOk": true,
-    "tags": ["gourmet", "local", "indoor"],
+    "tags": [
+      "gourmet",
+      "local",
+      "indoor"
+    ],
     "deepQuestion": "どんなスタイルで食べたい？",
     "deepOptions": [
-      {"label": "静かにゆっくり食べたい", "addTags": ["quiet"]},
-      {"label": "お店の雰囲気も楽しみたい", "addTags": ["photo"]},
-      {"label": "早めにサッと食べたい", "addTags": []}
+      {
+        "label": "静かにゆっくり食べたい",
+        "addTags": [
+          "quiet"
+        ]
+      },
+      {
+        "label": "お店のふんい気も楽しみたい",
+        "addTags": [
+          "photo"
+        ]
+      },
+      {
+        "label": "早めにサッと食べたい",
+        "addTags": []
+      }
     ]
   },
   {
     "id": "lunch_002",
     "category": "lunch",
-    "name": "ソースカツ丼（福井市内）",
+    "name": "ソースカツどん（福井市内）",
     "photo": "assets/08.jpg",
-    "description": "福井のソウルフード。サクサクのカツに特製ソースがたまらない。",
-    "detail": "福井県のB級グルメの代表格「ソースカツ丼」。薄めのカツを揚げたてのまま特製ソースにくぐらせ、ご飯の上にのせた豪快な一品。卵でとじないのが福井流。サクサク食感とソースの甘辛さが絶妙です。",
+    "description": "福井の人気ごはん。カツとソースの相性がばつぐん。",
+    "detail": "福井のソースカツどんは、あげたカツをソースにくぐらせてごはんにのせます。卵でとじないのが特長です。サクサク食感を楽しめます。",
     "age": "6+",
     "durationMin": 50,
     "costYen": 900,
     "rainyOk": true,
-    "tags": ["gourmet", "local", "indoor"],
-    "deepQuestion": "どんな雰囲気のお店がいい？",
+    "tags": [
+      "gourmet",
+      "local",
+      "indoor"
+    ],
+    "deepQuestion": "どんなふんい気のお店がいい？",
     "deepOptions": [
-      {"label": "老舗の名店で食べたい", "addTags": ["history"]},
-      {"label": "カジュアルなお店がいい", "addTags": ["family"]},
-      {"label": "ボリューム重視", "addTags": []}
+      {
+        "label": "古い名店で食べたい",
+        "addTags": [
+          "history"
+        ]
+      },
+      {
+        "label": "カジュアルなお店がいい",
+        "addTags": [
+          "family"
+        ]
+      },
+      {
+        "label": "ボリュームじゅうし",
+        "addTags": []
+      }
     ]
   },
   {
     "id": "lunch_003",
     "category": "lunch",
-    "name": "海鮮丼（越前海岸）",
+    "name": "海せんどん（えちぜん海岸）",
     "photo": "assets/09.jpg",
-    "description": "日本海の新鮮な魚介がたっぷりのった海鮮丼。",
-    "detail": "越前海岸で水揚げされた新鮮な魚介を使った海鮮丼。甘エビ、イカ、ブリ、ウニなど、季節によって旬の魚が変わります。特に冬は越前がにが入ることも。鮮度抜群の海の幸を堪能できます。",
+    "description": "日本海の新せんな魚がのった海せんどん。",
+    "detail": "えちぜん海岸であがった魚を使う海せんどんです。えび、いか、ぶりなど、季節で具が変わります。海の幸をしっかり味わえます。",
     "age": "8+",
     "durationMin": 60,
     "costYen": 2000,
     "rainyOk": true,
-    "tags": ["gourmet", "seafood", "local", "indoor", "view"],
+    "tags": [
+      "gourmet",
+      "seafood",
+      "local",
+      "indoor",
+      "view"
+    ],
     "deepQuestion": "何を重視したい？",
     "deepOptions": [
-      {"label": "とにかく新鮮な魚", "addTags": ["seafood"]},
-      {"label": "海の景色も楽しみたい", "addTags": ["view", "photo"]},
-      {"label": "ボリューム重視", "addTags": []}
+      {
+        "label": "とにかく新せんな魚",
+        "addTags": [
+          "seafood"
+        ]
+      },
+      {
+        "label": "海のけしきも楽しみたい",
+        "addTags": [
+          "view",
+          "photo"
+        ]
+      },
+      {
+        "label": "ボリュームじゅうし",
+        "addTags": []
+      }
     ]
   },
   {
     "id": "lunch_004",
     "category": "lunch",
-    "name": "越前がに料理（三国港）",
+    "name": "えちぜんがにりょうり（みくにみなと）",
     "photo": "assets/10.jpg",
-    "description": "冬の味覚の王様、越前がにを使った料理。",
-    "detail": "ズワイガニの中でも特に品質が高いとされる「越前がに」。11月から3月の冬季限定で楽しめます。かに刺し、焼きがに、かに鍋など、様々な調理法で楽しめます。甘くて濃厚な味わいは絶品です。",
+    "description": "冬に人気のえちぜんがにを味わえる料理。",
+    "detail": "11月から3月ごろに楽しめる、えちぜんがに料理です。かにさし、焼きがに、かになべなど、いろいろな食べ方があります。特別な日の食事にもおすすめです。",
     "age": "10+",
     "durationMin": 90,
     "costYen": 5000,
     "rainyOk": true,
-    "tags": ["gourmet", "seafood", "local", "indoor"],
+    "tags": [
+      "gourmet",
+      "seafood",
+      "local",
+      "indoor"
+    ],
     "deepQuestion": "どんな食べ方がいい？",
     "deepOptions": [
-      {"label": "かに刺しで味わいたい", "addTags": ["seafood"]},
-      {"label": "焼きがにやかに鍋がいい", "addTags": ["gourmet"]},
-      {"label": "いろいろ少しずつ", "addTags": []}
+      {
+        "label": "かにさしで味わいたい",
+        "addTags": [
+          "seafood"
+        ]
+      },
+      {
+        "label": "やきがにやかになべがいい",
+        "addTags": [
+          "gourmet"
+        ]
+      },
+      {
+        "label": "いろいろ少しずつ",
+        "addTags": []
+      }
     ]
   },
   {
     "id": "lunch_005",
     "category": "lunch",
-    "name": "焼き鯖寿司（小浜市）",
+    "name": "焼きさばずし（小浜市）",
     "photo": "assets/11.jpg",
-    "description": "若狭小浜の名物。香ばしい焼き鯖が絶品。",
-    "detail": "若狭湾で獲れた新鮮な鯖を焼いて酢飯と合わせた「焼き鯖寿司」。かつて京都に鯖を運んだ「鯖街道」の起点、小浜市の名物料理です。香ばしく焼かれた鯖の旨味と酢飯の相性が抜群です。",
+    "description": "小浜の名物。香ばしい焼きさばのずし。",
+    "detail": "新せんなさばを焼いて、すめしと合わせた名物です。さば街道の町として知られる小浜らしい料理です。持ち帰りもしやすい人気メニューです。",
     "age": "10+",
     "durationMin": 50,
     "costYen": 1200,
     "rainyOk": true,
-    "tags": ["gourmet", "seafood", "local", "history", "indoor"],
-    "deepQuestion": "どんな風に楽しみたい？",
+    "tags": [
+      "gourmet",
+      "seafood",
+      "local",
+      "history",
+      "indoor"
+    ],
+    "deepQuestion": "どんなふうに楽しみたい？",
     "deepOptions": [
-      {"label": "お店でゆっくり食べたい", "addTags": ["quiet"]},
-      {"label": "お土産にも買いたい", "addTags": ["shopping"]},
-      {"label": "歴史も知りたい", "addTags": ["learn"]}
+      {
+        "label": "お店でゆっくり食べたい",
+        "addTags": [
+          "quiet"
+        ]
+      },
+      {
+        "label": "おみやげにも買いたい",
+        "addTags": [
+          "shopping"
+        ]
+      },
+      {
+        "label": "歴史も知りたい",
+        "addTags": [
+          "learn"
+        ]
+      }
     ]
   },
   {
     "id": "lunch_006",
     "category": "lunch",
-    "name": "羽二重餅の甘味処（福井市内）",
+    "name": "羽二重もちの甘味どころ（福井市内）",
     "photo": "assets/12.jpg",
-    "description": "福井銘菓の羽二重餅を使ったスイーツが楽しめる。",
-    "detail": "福井の代表的な銘菓「羽二重餅」を使った和スイーツが楽しめる甘味処。もちもちとした食感の羽二重餅パフェや、抹茶と合わせた和風デザートなど、伝統的な味を現代風にアレンジしたメニューが人気です。",
+    "description": "福井名菓の羽二重もちを使ったスイーツ。",
+    "detail": "羽二重もちは福井を代表するおかしです。もちもち食感のパフェや和風デザートを楽しめます。休けいにぴったりのお店です。",
     "age": "6+",
     "durationMin": 40,
     "costYen": 800,
     "rainyOk": true,
-    "tags": ["sweets", "local", "indoor", "family"],
-    "deepQuestion": "どんな雰囲気で過ごしたい？",
+    "tags": [
+      "sweets",
+      "local",
+      "indoor",
+      "family"
+    ],
+    "deepQuestion": "どんなふんい気で過ごしたい？",
     "deepOptions": [
-      {"label": "静かにゆっくり味わいたい", "addTags": ["quiet"]},
-      {"label": "写真映えも重視", "addTags": ["photo"]},
-      {"label": "お土産も買いたい", "addTags": ["shopping"]}
+      {
+        "label": "静かにゆっくり味わいたい",
+        "addTags": [
+          "quiet"
+        ]
+      },
+      {
+        "label": "写真ばえも重視",
+        "addTags": [
+          "photo"
+        ]
+      },
+      {
+        "label": "おみやげも買いたい",
+        "addTags": [
+          "shopping"
+        ]
+      }
     ]
   },
   {
@@ -232,18 +471,38 @@
     "category": "afternoon",
     "name": "三方五湖レインボーライン",
     "photo": "assets/13.jpg",
-    "description": "5つの湖を一望できる絶景ドライブコース。",
-    "detail": "若狭湾国定公園の三方五湖を一望できる全長11.24kmの有料道路。山頂公園からは、5つの湖それぞれが違う色に見える神秘的な景色が楽しめます。リフトやケーブルカーで山頂まで登れ、足湯や展望テラスもあります。",
+    "description": "5つの湖を見わたせるドライブコース。",
+    "detail": "三方五湖を高い場所から見られる人気コースです。湖の色が少しずつちがって見えるのも楽しいです。山頂にはリフトや足湯もあります。",
     "age": "6+",
     "durationMin": 120,
     "costYen": 1000,
     "rainyOk": false,
-    "tags": ["nature", "view", "photo", "outdoor"],
+    "tags": [
+      "nature",
+      "view",
+      "photo",
+      "outdoor"
+    ],
     "deepQuestion": "どう楽しみたい？",
     "deepOptions": [
-      {"label": "景色をじっくり堪能", "addTags": ["quiet"]},
-      {"label": "写真をたくさん撮りたい", "addTags": ["photo"]},
-      {"label": "足湯でリラックス", "addTags": ["onsen"]}
+      {
+        "label": "けしきをじっくり楽しむ",
+        "addTags": [
+          "quiet"
+        ]
+      },
+      {
+        "label": "写真をたくさん取りたい",
+        "addTags": [
+          "photo"
+        ]
+      },
+      {
+        "label": "あしゆでリラックス",
+        "addTags": [
+          "onsen"
+        ]
+      }
     ]
   },
   {
@@ -251,18 +510,37 @@
     "category": "afternoon",
     "name": "気比神宮",
     "photo": "assets/14.jpg",
-    "description": "北陸道の総鎮守。立派な大鳥居が有名です。",
-    "detail": "702年の創建と伝わる、北陸道の総鎮守。高さ約11メートルの大鳥居は、広島の厳島神社、奈良の春日大社と並ぶ「日本三大鳥居」の一つです。境内には樹齢千年を超える御神木もあり、静かで厳かな雰囲気が漂います。",
+    "description": "大きな鳥居が目をひく歴史ある神社。",
+    "detail": "古くから親しまれている神社です。大きな鳥居は写真スポットとしても人気です。けいだいをゆっくり歩いて、静かな時間を過ごせます。",
     "age": "8+",
     "durationMin": 60,
     "costYen": 0,
     "rainyOk": true,
-    "tags": ["history", "culture", "quiet", "photo"],
+    "tags": [
+      "history",
+      "culture",
+      "quiet",
+      "photo"
+    ],
     "deepQuestion": "どんな過ごし方がいい？",
     "deepOptions": [
-      {"label": "じっくり参拝したい", "addTags": ["quiet", "learn"]},
-      {"label": "大鳥居の写真を撮りたい", "addTags": ["photo"]},
-      {"label": "さっと見て回りたい", "addTags": []}
+      {
+        "label": "じっくりお参りしたい",
+        "addTags": [
+          "quiet",
+          "learn"
+        ]
+      },
+      {
+        "label": "大鳥居の写真を取りたい",
+        "addTags": [
+          "photo"
+        ]
+      },
+      {
+        "label": "さっとみてまわりたい",
+        "addTags": []
+      }
     ]
   },
   {
@@ -270,113 +548,238 @@
     "category": "afternoon",
     "name": "丸岡城",
     "photo": "assets/15.jpg",
-    "description": "現存する最古の天守閣の一つ。桜の名所でもあります。",
-    "detail": "1576年に築城され、現存する天守閣の中では最古級とされる丸岡城。別名「霞ヶ城」とも呼ばれ、春には約400本のソメイヨシノが咲き誇る桜の名所です。天守閣に登れば、福井平野を一望できます。",
+    "description": "古い天守がのこる、福井の有名なお城。",
+    "detail": "丸岡城は古い天守が今ものこるお城です。春はさくらがきれいで、見ごろの時期はとてもにぎわいます。天守から町のけしきを見わたせます。",
     "age": "10+",
     "durationMin": 70,
     "costYen": 450,
     "rainyOk": false,
-    "tags": ["history", "culture", "view", "photo", "learn"],
-    "deepQuestion": "城でどう過ごす？",
+    "tags": [
+      "history",
+      "culture",
+      "view",
+      "photo",
+      "learn"
+    ],
+    "deepQuestion": "お城でどう過ごす？",
     "deepOptions": [
-      {"label": "天守閣に登りたい", "addTags": ["active", "view"]},
-      {"label": "歴史を詳しく知りたい", "addTags": ["museum_long", "learn"]},
-      {"label": "外観の写真を撮りたい", "addTags": ["photo"]}
+      {
+        "label": "天守にのぼりたい",
+        "addTags": [
+          "active",
+          "view"
+        ]
+      },
+      {
+        "label": "歴史をくわしく知りたい",
+        "addTags": [
+          "museum_long",
+          "learn"
+        ]
+      },
+      {
+        "label": "外の見た目を写真に取りたい",
+        "addTags": [
+          "photo"
+        ]
+      }
     ]
   },
   {
     "id": "afternoon_004",
     "category": "afternoon",
-    "name": "越前がにミュージアム",
+    "name": "えちぜんがにミュージアム",
     "photo": "assets/16.jpg",
-    "description": "かにの生態や漁について楽しく学べる体験施設。",
-    "detail": "「越前がに」をテーマにした日本唯一の博物館。かにの生態や越前がに漁の歴史を、映像やジオラマ、海中トンネルなどで楽しく学べます。実際の漁船も展示されており、漁師の仕事を体感できます。",
+    "description": "かにの生たいや漁を楽しく学べる施設。",
+    "detail": "えちぜんがにをテーマにした体験型の博物館です。えい像やジオラマで、かにや漁のことを学べます。海の仕事に興味がある人にもおすすめです。",
     "age": "6+",
     "durationMin": 80,
     "costYen": 500,
     "rainyOk": true,
-    "tags": ["museum", "learn", "family", "indoor", "seafood"],
+    "tags": [
+      "museum",
+      "learn",
+      "family",
+      "indoor",
+      "seafood"
+    ],
     "deepQuestion": "どんな体験がしたい？",
     "deepOptions": [
-      {"label": "じっくり展示を見たい", "addTags": ["museum_long"]},
-      {"label": "体験コーナーで遊びたい", "addTags": ["active", "craft"]},
-      {"label": "さっと見て回りたい", "addTags": []}
+      {
+        "label": "じっくり展示を見たい",
+        "addTags": [
+          "museum_long"
+        ]
+      },
+      {
+        "label": "体験コーナーで遊びたい",
+        "addTags": [
+          "active",
+          "craft"
+        ]
+      },
+      {
+        "label": "さっと見て回りたい",
+        "addTags": []
+      }
     ]
   },
   {
     "id": "afternoon_005",
     "category": "afternoon",
-    "name": "めがねミュージアム（鯖江市）",
+    "name": "めがねミュージアム（さばえ市）",
     "photo": "assets/17.jpg",
-    "description": "眼鏡フレームの産地・鯖江の博物館。手作り体験もできます。",
-    "detail": "国内生産シェア約90%を誇る眼鏡産地・鯖江市にある眼鏡の博物館。眼鏡づくりの歴史や技術を学べるほか、自分だけの眼鏡を手作りできる体験工房もあります。職人の技を間近で見学できるのも魅力です。",
+    "description": "めがねの町さばえで、作り方を学べる施設。",
+    "detail": "さばえ市はめがね作りで有名です。展示を見て歴史や技を学べるほか、手作り体験ができる日もあります。おみやげ選びも楽しいです。",
     "age": "8+",
     "durationMin": 90,
     "costYen": 300,
     "rainyOk": true,
-    "tags": ["museum", "learn", "craft", "indoor", "family"],
+    "tags": [
+      "museum",
+      "learn",
+      "craft",
+      "indoor",
+      "family"
+    ],
     "deepQuestion": "何をメインにしたい？",
     "deepOptions": [
-      {"label": "眼鏡作り体験したい", "addTags": ["craft", "active"]},
-      {"label": "展示をじっくり見たい", "addTags": ["museum_long"]},
-      {"label": "お土産も買いたい", "addTags": ["shopping"]}
+      {
+        "label": "めがね作りを体験したい",
+        "addTags": [
+          "craft",
+          "active"
+        ]
+      },
+      {
+        "label": "展示をじっくり見たい",
+        "addTags": [
+          "museum_long"
+        ]
+      },
+      {
+        "label": "おみやげも買いたい",
+        "addTags": [
+          "shopping"
+        ]
+      }
     ]
   },
   {
     "id": "afternoon_006",
     "category": "afternoon",
-    "name": "西山公園（鯖江市）",
+    "name": "西山公園（さばえ市）",
     "photo": "assets/18.jpg",
-    "description": "つつじの名所。展望台からの眺めも最高です。",
-    "detail": "「日本の歴史公園100選」に選ばれた鯖江市のシンボル公園。約5万株のつつじが咲く5月は特に見事です。展望台からは鯖江市街を一望でき、動物園やアスレチック、芝生広場もあり、家族連れに人気です。",
+    "description": "つつじや動物園を楽しめる、家族向け公園。",
+    "detail": "西山公園は春のつつじがとても有名です。小さな動物園や広場があり、子ども連れでも楽しめます。天気のよい日は散歩にもぴったりです。",
     "age": "3+",
     "durationMin": 90,
     "costYen": 0,
     "rainyOk": false,
-    "tags": ["nature", "family", "outdoor", "view", "active"],
+    "tags": [
+      "nature",
+      "family",
+      "outdoor",
+      "view",
+      "active"
+    ],
     "deepQuestion": "どう過ごしたい？",
     "deepOptions": [
-      {"label": "景色を楽しみたい", "addTags": ["view", "photo"]},
-      {"label": "動物園を見たい", "addTags": ["learn"]},
-      {"label": "アスレチックで遊びたい", "addTags": ["active"]}
+      {
+        "label": "けしきを楽しみたい",
+        "addTags": [
+          "view",
+          "photo"
+        ]
+      },
+      {
+        "label": "動物園を見たい",
+        "addTags": [
+          "learn"
+        ]
+      },
+      {
+        "label": "アスレチックで遊びたい",
+        "addTags": [
+          "active"
+        ]
+      }
     ]
   },
   {
     "id": "night_001",
     "category": "night",
-    "name": "福井駅前（恐竜広場）",
+    "name": "福井駅前（きょうりゅう広場）",
     "photo": "assets/19.jpg",
-    "description": "駅前に巨大恐竜モニュメント。夜はライトアップも。",
-    "detail": "JR福井駅前にある恐竜広場。実物大の動く恐竜モニュメント3体が設置されており、定期的に動いて鳴き声を上げます。夜にはライトアップされ、幻想的な雰囲気に。恐竜王国福井のシンボルです。",
+    "description": "駅前で動くきょうりゅうを見られる人気スポット。",
+    "detail": "福井駅前には大きなきょうりゅうモニュメントがあります。時間になると動いたり、声が出たりします。夜のライトアップもきれいです。",
     "age": "3+",
     "durationMin": 30,
     "costYen": 0,
     "rainyOk": true,
-    "tags": ["photo", "family", "outdoor", "learn"],
+    "tags": [
+      "photo",
+      "family",
+      "outdoor",
+      "learn"
+    ],
     "deepQuestion": "どう楽しみたい？",
     "deepOptions": [
-      {"label": "写真をたくさん撮りたい", "addTags": ["photo"]},
-      {"label": "買い物もしたい", "addTags": ["shopping"]},
-      {"label": "夕食も近くで食べたい", "addTags": ["gourmet"]}
+      {
+        "label": "写真をたくさん取りたい",
+        "addTags": [
+          "photo"
+        ]
+      },
+      {
+        "label": "買い物もしたい",
+        "addTags": [
+          "shopping"
+        ]
+      },
+      {
+        "label": "夕食も近くで食べたい",
+        "addTags": [
+          "gourmet"
+        ]
+      }
     ]
   },
   {
     "id": "night_002",
     "category": "night",
-    "name": "片町（福井市の繁華街）",
+    "name": "片町（福井市のはんか街）",
     "photo": "assets/20.jpg",
-    "description": "福井市の中心街。お土産屋さんやレストランが並びます。",
-    "detail": "福井市の中心繁華街。飲食店やお土産屋さん、ショッピングモールが立ち並びます。福井の地酒や羽二重餅、眼鏡など、福井ならではのお土産を探すのに最適。夕食後の散策にもおすすめです。",
+    "description": "食事や買い物を楽しめる福井市の中心エリア。",
+    "detail": "はんか街にはお店や食事どころがならんでいます。福井の地元グルメやおみやげを探しやすい場所です。夜の散歩にも向いています。",
     "age": "6+",
     "durationMin": 90,
     "costYen": 0,
     "rainyOk": true,
-    "tags": ["shopping", "gourmet", "indoor", "local"],
+    "tags": [
+      "shopping",
+      "gourmet",
+      "indoor",
+      "local"
+    ],
     "deepQuestion": "何をメインにしたい？",
     "deepOptions": [
-      {"label": "お土産をじっくり選びたい", "addTags": ["shopping"]},
-      {"label": "地元グルメを楽しみたい", "addTags": ["gourmet"]},
-      {"label": "さっと見て回りたい", "addTags": []}
+      {
+        "label": "おみやげをじっくり選びたい",
+        "addTags": [
+          "shopping"
+        ]
+      },
+      {
+        "label": "地元グルメを楽しみたい",
+        "addTags": [
+          "gourmet"
+        ]
+      },
+      {
+        "label": "さっと見て回りたい",
+        "addTags": []
+      }
     ]
   },
   {
@@ -384,18 +787,40 @@
     "category": "night",
     "name": "敦賀赤レンガ倉庫",
     "photo": "assets/21.jpg",
-    "description": "明治時代の倉庫をリノベーション。レストランやジオラマ館も。",
-    "detail": "1905年に建てられた赤レンガ倉庫を改修した商業施設。レストランやカフェ、鉄道ジオラマ館があり、夜はライトアップされて幻想的な雰囲気に。敦賀港の歴史を感じられるレトロな空間です。",
+    "description": "赤レンガの建物で食事や見学ができるスポット。",
+    "detail": "明治時代に建てられた倉庫を生かした施設です。レストランやジオラマ館があり、雨の日でも楽しめます。夜のライトアップも人気です。",
     "age": "6+",
     "durationMin": 80,
     "costYen": 400,
     "rainyOk": true,
-    "tags": ["history", "gourmet", "photo", "indoor", "family"],
+    "tags": [
+      "history",
+      "gourmet",
+      "photo",
+      "indoor",
+      "family"
+    ],
     "deepQuestion": "どう過ごしたい？",
     "deepOptions": [
-      {"label": "ジオラマをじっくり見たい", "addTags": ["learn", "museum_long"]},
-      {"label": "レストランで食事したい", "addTags": ["gourmet"]},
-      {"label": "写真を撮りたい", "addTags": ["photo"]}
+      {
+        "label": "ジオラマをじっくり見たい",
+        "addTags": [
+          "learn",
+          "museum_long"
+        ]
+      },
+      {
+        "label": "レストランで食事したい",
+        "addTags": [
+          "gourmet"
+        ]
+      },
+      {
+        "label": "写真を取りたい",
+        "addTags": [
+          "photo"
+        ]
+      }
     ]
   },
   {
@@ -403,37 +828,78 @@
     "category": "night",
     "name": "三国サンセットビーチ",
     "photo": "assets/22.jpg",
-    "description": "日本海に沈む夕日が美しいビーチ。夜の散歩も気持ちいい。",
-    "detail": "三国町にある約2kmの砂浜。日本海に沈む夕日が美しく、「日本の夕陽百選」に選ばれています。夏は海水浴場として賑わい、夜は波の音を聞きながら静かな散歩が楽しめます。",
+    "description": "日本海にしずむ夕日がきれいな海辺。",
+    "detail": "約2kmの海岸が続く開放的なビーチです。夕方は空と海の色が変わり、写真にもおすすめです。波の音を聞きながらゆっくり歩けます。",
     "age": "6+",
     "durationMin": 40,
     "costYen": 0,
     "rainyOk": false,
-    "tags": ["nature", "view", "photo", "quiet", "outdoor"],
+    "tags": [
+      "nature",
+      "view",
+      "photo",
+      "quiet",
+      "outdoor"
+    ],
     "deepQuestion": "どう過ごしたい？",
     "deepOptions": [
-      {"label": "夕日をじっくり眺めたい", "addTags": ["quiet", "view"]},
-      {"label": "写真を撮りたい", "addTags": ["photo"]},
-      {"label": "浜辺を散歩したい", "addTags": ["outdoor"]}
+      {
+        "label": "夕日をじっくりながめたい",
+        "addTags": [
+          "quiet",
+          "view"
+        ]
+      },
+      {
+        "label": "写真を取りたい",
+        "addTags": [
+          "photo"
+        ]
+      },
+      {
+        "label": "海辺を散歩したい",
+        "addTags": [
+          "outdoor"
+        ]
+      }
     ]
   },
   {
     "id": "night_005",
     "category": "night",
-    "name": "足羽川桜並木（夜桜）",
+    "name": "足羽川さくら並木（夜ざくら）",
     "photo": "assets/23.jpg",
-    "description": "春限定。約2.2kmの桜並木がライトアップされます。",
-    "detail": "「日本さくら名所100選」に選ばれた足羽川の桜並木。約600本のソメイヨシノが約2.2kmにわたって続きます。春の夜にはライトアップされ、幻想的な夜桜が楽しめます。（春季限定）",
+    "description": "春だけ見られる、ライトアップされたさくら並木。",
+    "detail": "足羽川ぞいには長いさくら並木があります。春の夜はライトアップされ、昼とはちがうふんい気を楽しめます。季節限定の人気スポットです。",
     "age": "6+",
     "durationMin": 50,
     "costYen": 0,
     "rainyOk": false,
-    "tags": ["nature", "view", "photo", "quiet"],
+    "tags": [
+      "nature",
+      "view",
+      "photo",
+      "quiet"
+    ],
     "deepQuestion": "どう楽しみたい？",
     "deepOptions": [
-      {"label": "ゆっくり散歩したい", "addTags": ["quiet", "outdoor"]},
-      {"label": "写真をたくさん撮りたい", "addTags": ["photo"]},
-      {"label": "さっと見て回りたい", "addTags": []}
+      {
+        "label": "ゆっくり散歩したい",
+        "addTags": [
+          "quiet",
+          "outdoor"
+        ]
+      },
+      {
+        "label": "写真をたくさん取りたい",
+        "addTags": [
+          "photo"
+        ]
+      },
+      {
+        "label": "さっと見て回りたい",
+        "addTags": []
+      }
     ]
   },
   {
@@ -441,18 +907,37 @@
     "category": "night",
     "name": "福井市立郷土歴史博物館（夜間開館日）",
     "photo": "assets/24.jpg",
-    "description": "福井の歴史を学べる博物館。夜間開館日もあります。",
-    "detail": "福井城址に隣接する博物館。福井藩主松平家の資料や、幕末の名君・松平春嶽に関する展示が充実しています。福井城の復元模型や、越前焼などの伝統工芸品も展示。特別展開催時は夜間開館もあります。",
+    "description": "福井の歴史を学べる博物館。夜に開く日もあり。",
+    "detail": "福井城あとに近い博物館です。福井の歴史や人々のくらしに関する資料を展示しています。特別展の時期には夜に入れる日もあります。",
     "age": "10+",
     "durationMin": 70,
     "costYen": 220,
     "rainyOk": true,
-    "tags": ["history", "museum", "learn", "indoor", "culture"],
+    "tags": [
+      "history",
+      "museum",
+      "learn",
+      "indoor",
+      "culture"
+    ],
     "deepQuestion": "どう楽しみたい？",
     "deepOptions": [
-      {"label": "じっくり展示を見たい", "addTags": ["museum_long"]},
-      {"label": "福井の歴史を知りたい", "addTags": ["learn"]},
-      {"label": "さっと見て回りたい", "addTags": []}
+      {
+        "label": "じっくり展示を見たい",
+        "addTags": [
+          "museum_long"
+        ]
+      },
+      {
+        "label": "福井の歴史を知りたい",
+        "addTags": [
+          "learn"
+        ]
+      },
+      {
+        "label": "さっと見て回りたい",
+        "addTags": []
+      }
     ]
   },
   {
@@ -460,18 +945,38 @@
     "category": "stay",
     "name": "あわら温泉の旅館",
     "photo": "assets/25.jpg",
-    "description": "福井を代表する温泉地。和風旅館でゆったり。",
-    "detail": "福井県を代表する温泉地、あわら温泉。明治16年開湯の歴史ある温泉で、加賀温泉郷に近い立地です。多くの旅館が立ち並び、それぞれ自家源泉を持っています。泉質は弱アルカリ性で、肌がすべすべになると評判です。",
+    "description": "福井を代表する温泉地で、ゆったり休める宿。",
+    "detail": "あわら温泉は福井で有名な温泉地です。多くの旅館があり、家族向けの宿も選びやすいです。温泉で体を休めたい人におすすめです。",
     "age": "0+",
     "durationMin": 720,
     "costYen": 15000,
     "rainyOk": true,
-    "tags": ["onsen", "family", "quiet", "indoor"],
+    "tags": [
+      "onsen",
+      "family",
+      "quiet",
+      "indoor"
+    ],
     "deepQuestion": "どんな宿がいい？",
     "deepOptions": [
-      {"label": "高級旅館でおもてなし", "addTags": ["gourmet"]},
-      {"label": "家族向けのカジュアル宿", "addTags": ["family"]},
-      {"label": "静かでゆったりした宿", "addTags": ["quiet"]}
+      {
+        "label": "高級旅館でおもてなし",
+        "addTags": [
+          "gourmet"
+        ]
+      },
+      {
+        "label": "家族向けのカジュアル宿",
+        "addTags": [
+          "family"
+        ]
+      },
+      {
+        "label": "静かでゆったりした宿",
+        "addTags": [
+          "quiet"
+        ]
+      }
     ]
   },
   {
@@ -479,18 +984,41 @@
     "category": "stay",
     "name": "三国温泉の宿",
     "photo": "assets/26.jpg",
-    "description": "日本海を望む温泉宿。新鮮な海の幸も楽しめます。",
-    "detail": "東尋坊や三国港に近い温泉宿。日本海を一望できる露天風呂を持つ宿も多く、夕日を眺めながらの入浴は格別です。三国港で水揚げされた新鮮な海の幸を使った料理も自慢。",
+    "description": "海の近くで温泉と海せん料理を楽しめる宿。",
+    "detail": "東尋坊や三国港に近い宿がそろっています。海を見ながら入れる露天風呂がある宿もあります。新せんな海の幸を味わえるのが魅力です。",
     "age": "0+",
     "durationMin": 720,
     "costYen": 13000,
     "rainyOk": true,
-    "tags": ["onsen", "view", "seafood", "gourmet", "indoor"],
+    "tags": [
+      "onsen",
+      "view",
+      "seafood",
+      "gourmet",
+      "indoor"
+    ],
     "deepQuestion": "何を重視したい？",
     "deepOptions": [
-      {"label": "海の景色", "addTags": ["view", "photo"]},
-      {"label": "海鮮料理", "addTags": ["seafood", "gourmet"]},
-      {"label": "温泉でリラックス", "addTags": ["quiet"]}
+      {
+        "label": "海のけしき",
+        "addTags": [
+          "view",
+          "photo"
+        ]
+      },
+      {
+        "label": "海せん料理",
+        "addTags": [
+          "seafood",
+          "gourmet"
+        ]
+      },
+      {
+        "label": "おんせんでリラックス",
+        "addTags": [
+          "quiet"
+        ]
+      }
     ]
   },
   {
@@ -498,18 +1026,32 @@
     "category": "stay",
     "name": "福井市内のホテル",
     "photo": "assets/27.jpg",
-    "description": "駅近で便利。翌日の観光にも移動しやすい。",
-    "detail": "福井駅周辺のビジネスホテルやシティホテル。駅から徒歩圏内で、翌日の観光にも便利な立地です。リーズナブルな価格で清潔感があり、朝食バイキングが充実しているホテルも多くあります。",
+    "description": "駅に近く、次の日の移動に便利なホテル。",
+    "detail": "福井駅の近くにはホテルが多くあります。交通の便利さを重視したい人に向いています。朝食つきのプランも選びやすいです。",
     "age": "0+",
     "durationMin": 720,
     "costYen": 8000,
     "rainyOk": true,
-    "tags": ["indoor", "family"],
+    "tags": [
+      "indoor",
+      "family"
+    ],
     "deepQuestion": "どんなホテルがいい？",
     "deepOptions": [
-      {"label": "駅に近い方がいい", "addTags": []},
-      {"label": "朝食が充実している", "addTags": ["gourmet"]},
-      {"label": "価格重視", "addTags": []}
+      {
+        "label": "駅に近い方がいい",
+        "addTags": []
+      },
+      {
+        "label": "朝食がしっかりしている",
+        "addTags": [
+          "gourmet"
+        ]
+      },
+      {
+        "label": "かかくじゅうし",
+        "addTags": []
+      }
     ]
   },
   {
@@ -517,18 +1059,34 @@
     "category": "stay",
     "name": "敦賀のホテル",
     "photo": "assets/28.jpg",
-    "description": "港町敦賀のホテル。海鮮料理が自慢のところも。",
-    "detail": "日本海側有数の港町・敦賀市のホテル。敦賀港で水揚げされた新鮮な海の幸を使った料理が味わえる宿も多くあります。敦賀駅周辺に集中しており、東尋坊や若狭方面への観光拠点としても便利です。",
+    "description": "港町で海せん料理も楽しめる宿泊先。",
+    "detail": "敦賀駅の周りにホテルが集まっています。海せん料理を出す宿もあり、観光のきょ点にしやすいです。若狭方面への移動にも便利です。",
     "age": "0+",
     "durationMin": 720,
     "costYen": 9000,
     "rainyOk": true,
-    "tags": ["indoor", "seafood", "family"],
+    "tags": [
+      "indoor",
+      "seafood",
+      "family"
+    ],
     "deepQuestion": "何を重視したい？",
     "deepOptions": [
-      {"label": "海鮮料理", "addTags": ["seafood", "gourmet"]},
-      {"label": "駅に近い", "addTags": []},
-      {"label": "価格重視", "addTags": []}
+      {
+        "label": "海せん料理",
+        "addTags": [
+          "seafood",
+          "gourmet"
+        ]
+      },
+      {
+        "label": "駅に近い",
+        "addTags": []
+      },
+      {
+        "label": "かかくじゅうし",
+        "addTags": []
+      }
     ]
   },
   {
@@ -536,18 +1094,41 @@
     "category": "stay",
     "name": "若狭の民宿",
     "photo": "assets/29.jpg",
-    "description": "漁師の宿で新鮮な魚料理。アットホームな雰囲気。",
-    "detail": "若狭湾沿いの漁師が営む民宿。その日に獲れた新鮮な魚を使った料理が自慢で、都会のホテルでは味わえない家庭的なおもてなしが受けられます。リーズナブルな価格も魅力です。",
+    "description": "地元の海の幸を味わえる、あたたかい民宿。",
+    "detail": "若狭湾の近くには漁師さんの民宿があります。その日にとれた魚を使った料理が人気です。家庭的なふんい気でゆっくり過ごせます。",
     "age": "6+",
     "durationMin": 720,
     "costYen": 10000,
     "rainyOk": true,
-    "tags": ["seafood", "gourmet", "local", "family", "indoor"],
+    "tags": [
+      "seafood",
+      "gourmet",
+      "local",
+      "family",
+      "indoor"
+    ],
     "deepQuestion": "どんな体験がしたい？",
     "deepOptions": [
-      {"label": "新鮮な魚を食べたい", "addTags": ["seafood", "gourmet"]},
-      {"label": "地元の人と交流したい", "addTags": ["learn", "local"]},
-      {"label": "静かに過ごしたい", "addTags": ["quiet"]}
+      {
+        "label": "新せんな魚を食べたい",
+        "addTags": [
+          "seafood",
+          "gourmet"
+        ]
+      },
+      {
+        "label": "地元の人と話したい",
+        "addTags": [
+          "learn",
+          "local"
+        ]
+      },
+      {
+        "label": "静かに過ごしたい",
+        "addTags": [
+          "quiet"
+        ]
+      }
     ]
   },
   {
@@ -555,18 +1136,41 @@
     "category": "stay",
     "name": "永平寺門前の宿坊・旅館",
     "photo": "assets/30.jpg",
-    "description": "永平寺に近い宿。精進料理が味わえるところも。",
-    "detail": "大本山永平寺の門前町にある宿泊施設。宿坊では早朝の坐禅体験ができるところもあります。旅館では精進料理をベースにした体に優しい料理が味わえ、静かな山間の環境でゆったりと過ごせます。",
+    "description": "永平寺に近く、静かに過ごせる宿。",
+    "detail": "門前町には宿坊や旅館があります。朝のざぜん体験や、体にやさしい料理を楽しめる宿もあります。落ち着いた時間を過ごしたい人におすすめです。",
     "age": "10+",
     "durationMin": 720,
     "costYen": 11000,
     "rainyOk": true,
-    "tags": ["culture", "quiet", "learn", "indoor", "history"],
+    "tags": [
+      "culture",
+      "quiet",
+      "learn",
+      "indoor",
+      "history"
+    ],
     "deepQuestion": "どんな体験がしたい？",
     "deepOptions": [
-      {"label": "坐禅を体験したい", "addTags": ["learn", "quiet"]},
-      {"label": "精進料理を食べたい", "addTags": ["gourmet", "culture"]},
-      {"label": "静かに過ごしたい", "addTags": ["quiet"]}
+      {
+        "label": "ざぜんを体験したい",
+        "addTags": [
+          "learn",
+          "quiet"
+        ]
+      },
+      {
+        "label": "しょうじん料理を食べたい",
+        "addTags": [
+          "gourmet",
+          "culture"
+        ]
+      },
+      {
+        "label": "静かに過ごしたい",
+        "addTags": [
+          "quiet"
+        ]
+      }
     ]
   }
 ]
