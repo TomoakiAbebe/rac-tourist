@@ -804,9 +804,113 @@ h2 {
 }
 
 /* ===========================
+   レベル選択画面
+   =========================== */
+.level-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 40px);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.level-screen h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.level-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF8C42;
+    margin-bottom: 50px;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.level-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.level-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 35px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 300px;
+    font-family: inherit;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    position: relative;
+    top: 0;
+}
+
+.level-btn:hover {
+    top: -8px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+    transform: rotate(-1deg);
+}
+
+.level-easy {
+    background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+    border: 6px solid #22C55E;
+}
+
+.level-normal {
+    background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+    border: 6px solid #F59E0B;
+}
+
+.level-hard {
+    background: linear-gradient(135deg, #FEE2E2, #FECACA);
+    border: 6px solid #EF4444;
+}
+
+.level-stars {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.level-name {
+    font-size: 36px;
+    font-weight: 900;
+    color: #333;
+}
+
+.level-easy .level-name { color: #15803D; }
+.level-normal .level-name { color: #B45309; }
+.level-hard .level-name { color: #B91C1C; }
+
+.level-desc {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.7;
+}
+
+.level-desc p {
+    margin-bottom: 6px;
+}
+
+/* ===========================
    レスポンシブ対応
    =========================== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         padding: 10px;
         font-size: 18px;
@@ -841,6 +945,16 @@ h2 {
     
     .place-cards {
         grid-template-columns: 1fr;
+    }
+    
+    .level-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .level-btn {
+        width: 100%;
+        max-width: 400px;
     }
     
     .modal-content {
@@ -902,12 +1016,229 @@ h2 {
     }
 }
 
-/* iPad横向け最適化 */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .place-cards {
-        grid-template-columns: repeat(3, 1fr);
+/* iPad向け最適化（縦横共通） */
+@media (min-width: 768px) and (max-width: 1366px) {
+    body {
+        padding: 14px;
+        font-size: 19px;
     }
-    
+
+    #app {
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 30px;
+        border-width: 5px;
+    }
+
+    .start-screen {
+        min-height: calc(100vh - 28px);
+        padding: 32px 24px;
+    }
+
+    .start-screen h1 {
+        font-size: 48px;
+    }
+
+    .start-screen .subtitle {
+        font-size: 24px;
+        margin-bottom: 36px;
+        max-width: 760px;
+    }
+
+    .btn-large {
+        padding: 24px 56px;
+        font-size: 28px;
+        min-width: 300px;
+    }
+
+    .level-screen {
+        min-height: calc(100vh - 28px);
+        padding: 30px 18px;
+    }
+
+    .level-cards {
+        gap: 20px;
+    }
+
+    .level-btn {
+        width: calc(50% - 12px);
+        min-width: 280px;
+        max-width: 420px;
+        padding: 30px 24px;
+    }
+
+    .interview-layout {
+        gap: 18px;
+        height: calc(100vh - 28px);
+        max-height: none;
+    }
+
+    .interview-sidebar {
+        flex: 0 0 300px;
+        padding: 20px;
+        top: 14px;
+        max-height: calc(100vh - 28px);
+    }
+
+    .interview-main {
+        padding: 28px;
+        max-height: calc(100vh - 28px);
+    }
+
+    .place-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .place-card-image {
+        height: 180px;
+    }
+
+    .place-card-body {
+        padding: 20px;
+    }
+
+    .place-card-body h3 {
+        font-size: 22px;
+    }
+
+    .place-card-body p {
+        font-size: 17px;
+    }
+
+    .timeline-item {
+        padding: 24px;
+        gap: 18px;
+    }
+
+    .score-number {
+        font-size: 78px;
+    }
+}
+
+/* iPad縦向け最適化 */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .interview-layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .interview-sidebar {
+        flex: none;
+        position: static;
+        max-height: none;
+    }
+
+    .interview-main {
+        max-height: none;
+    }
+
+    .interview-sidebar-actions {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .interview-sidebar-actions .btn-small {
+        font-size: 16px;
+        padding: 12px 16px;
+    }
+}
+
+/* iPad横向け最適化 */
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
+    .interview-layout {
+        height: calc(100vh - 28px);
+        align-items: stretch;
+    }
+
+    .interview-main {
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+        max-height: calc(100vh - 28px);
+        overflow: hidden;
+    }
+
+    .interview-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .place-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin-bottom: 0;
+        flex: 1;
+        min-height: 0;
+    }
+
+    .place-card {
+        display: grid;
+        grid-template-rows: minmax(0, 1fr) auto;
+        height: 100%;
+        border-width: 3px;
+        border-radius: 16px;
+        box-shadow: 0 5px 12px rgba(255,140,66,0.25);
+    }
+
+    .place-card:hover {
+        transform: none;
+        box-shadow: 0 8px 16px rgba(255,140,66,0.32);
+    }
+
+    .place-card-image {
+        height: 100%;
+        min-height: 112px;
+        font-size: 46px;
+    }
+
+    .place-card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px 10px;
+        overflow: hidden;
+    }
+
+    .place-card-body h3 {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .place-card-body p {
+        font-size: 12px;
+        line-height: 1.25;
+        margin-bottom: 0;
+        display: -webkit-box;
+        line-clamp: 1;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .place-card-meta {
+        margin-top: auto;
+        gap: 4px;
+        margin-bottom: 0;
+        max-height: 36px;
+        overflow: hidden;
+    }
+
+    .meta-tag {
+        padding: 2px 6px;
+        font-size: 10px;
+        line-height: 1.1;
+        white-space: nowrap;
+        border-width: 2px;
+    }
+
     .customer-list {
         grid-template-columns: repeat(2, 1fr);
     }

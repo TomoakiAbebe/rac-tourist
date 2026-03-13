@@ -6,6 +6,7 @@ let places = [];
 let selectedCustomer = null;
 let selectedPlaces = {};
 let currentCategoryIndex = 0;
+let selectedLevel = 'normal';
 const categories = ['morning', 'lunch', 'afternoon', 'night', 'stay'];
 const categoryNames = {
     morning: '午前の観光',
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             selectedCustomer = customers.find(c => c.id === savedCustomerId);
             currentCategoryIndex = parseInt(savedCategoryIndex);
             selectedPlaces = JSON.parse(localStorage.getItem('selectedPlaces') || '{}');
+            selectedLevel = localStorage.getItem('selectedLevel') || 'normal';
             
             if (currentCategoryIndex < categories.length) {
                 showInterviewScreen();
@@ -86,7 +88,11 @@ function showScreen(screenId) {
 // ===========================
 function showHomeScreen() {
     // localStorageをクリア（新規スタート）
-    localStorage.clear();
+    localStorage.removeItem('selectedCustomerId');
+    localStorage.removeItem('currentCategoryIndex');
+    localStorage.removeItem('selectedPlaces');
+    localStorage.removeItem('selectedLevel');
+    selectedLevel = 'normal';
     
     showScreen('screen-home');
     
@@ -106,23 +112,50 @@ function showHomeScreen() {
             showError('顧客データが読み込まれていません');
             return;
         }
-        
-        // ランダムに顧客を選択
-        const randomIndex = Math.floor(Math.random() * customers.length);
-        selectedCustomer = customers[randomIndex];
-        
-        console.log('選択された顧客:', selectedCustomer.name);
-        
-        // localStorage保存
-        localStorage.setItem('selectedCustomerId', selectedCustomer.id);
-        localStorage.setItem('currentCategoryIndex', '0');
-        localStorage.setItem('selectedPlaces', JSON.stringify({}));
-        
-        currentCategoryIndex = 0;
-        selectedPlaces = {};
-        
-        showInterviewScreen();
+
+        showLevelScreen();
     };
+}
+
+// ===========================
+// Level選択画面
+// ===========================
+function showLevelScreen() {
+    showScreen('screen-level');
+
+    const levelButtons = document.querySelectorAll('.level-btn');
+    if (levelButtons.length === 0) {
+        selectedLevel = 'normal';
+        localStorage.setItem('selectedLevel', selectedLevel);
+        startGame();
+        return;
+    }
+
+    levelButtons.forEach(btn => {
+        btn.onclick = () => {
+            const level = btn.dataset.level;
+            selectedLevel = ['easy', 'normal', 'hard'].includes(level) ? level : 'normal';
+            localStorage.setItem('selectedLevel', selectedLevel);
+            startGame();
+        };
+    });
+}
+
+function startGame() {
+    const randomIndex = Math.floor(Math.random() * customers.length);
+    selectedCustomer = customers[randomIndex];
+
+    console.log('選択された顧客:', selectedCustomer.name, 'レベル:', selectedLevel);
+
+    localStorage.setItem('selectedCustomerId', selectedCustomer.id);
+    localStorage.setItem('currentCategoryIndex', '0');
+    localStorage.setItem('selectedPlaces', JSON.stringify({}));
+    localStorage.setItem('selectedLevel', selectedLevel);
+
+    currentCategoryIndex = 0;
+    selectedPlaces = {};
+
+    showInterviewScreen();
 }
 
 // ===========================
@@ -175,10 +208,24 @@ function setupInterviewButtons() {
 function updateCustomerHint() {
     const hintContainer = document.getElementById('customer-hint');
     const category = categories[currentCategoryIndex];
-    const categoryHint = selectedCustomer.categoryHints?.[category] || selectedCustomer.persona;
     const categoryName = categoryNames[category];
+
+    let categoryHint = selectedCustomer.categoryHints?.[category] || selectedCustomer.persona;
+    let levelLabel = '⭐⭐ ふつう';
+    let levelColor = '#F59E0B';
+
+    if (selectedLevel === 'easy') {
+        categoryHint = selectedCustomer.easyHints?.[category] || categoryHint;
+        levelLabel = '⭐ かんたん';
+        levelColor = '#22C55E';
+    } else if (selectedLevel === 'hard') {
+        categoryHint = selectedCustomer.hardHints?.[category] || categoryHint;
+        levelLabel = '⭐⭐⭐ むずかしい';
+        levelColor = '#EF4444';
+    }
     
     hintContainer.innerHTML = `
+        <div style="margin-bottom:10px; padding: 5px 12px; background:${levelColor}; color:white; border-radius:15px; font-size:13px; font-weight:800; display:inline-block;">${levelLabel}</div>
         <h3>💡 ${selectedCustomer.name}</h3>
         <p style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 2px solid #ccc;">${selectedCustomer.persona}</p>
         <h4 style="font-size: 16px; color: #667eea; margin: 15px 0 10px 0;">📌 ${categoryName}について</h4>
@@ -203,6 +250,11 @@ function addChatMessage(message) {
 function showCategoryQuestion() {
     const category = categories[currentCategoryIndex];
     const categoryName = categoryNames[category];
+
+    const mainArea = document.querySelector('.interview-main');
+    if (mainArea) {
+        mainArea.scrollTop = 0;
+    }
     
     // カテゴリに応じた具体的なヒントを左側に表示
     updateCustomerHint();
@@ -216,21 +268,22 @@ function showCategoryQuestion() {
 
 function renderPlaceCards(categoryPlaces) {
     const container = document.getElementById('place-cards');
+    const showMeta = selectedLevel !== 'easy';
+
     container.innerHTML = categoryPlaces.map(place => `
-        <div class="place-card" data-place-id="${place.id}">
+        <div class="place-card" data-place-id="${place.id}" onclick="showDetailModal('${place.id}')" style="cursor: pointer;">
             <div class="place-card-image">
                 ${place.photo ? `<img src="${place.photo}" alt="${place.name}" onerror="this.style.display='none'">` : '🏞️'}
             </div>
             <div class="place-card-body">
-                <h3>${place.name}</h3>
+                <h3>${selectedLevel === 'hard' ? '？？？' : place.name}</h3>
                 <p>${place.description}</p>
-                <div class="place-card-meta">
+                ${showMeta ? `<div class="place-card-meta">
                     <span class="meta-tag">対象: ${place.age}</span>
                     <span class="meta-tag">⏱️ ${place.durationMin}分</span>
                     <span class="meta-tag">💰 ${place.costYen}円${place.costYen === 0 ? '(無料)' : ''}</span>
                     ${place.rainyOk ? '<span class="meta-tag highlight">☔雨OK</span>' : ''}
-                </div>
-                <button class="btn btn-secondary" onclick="showDetailModal('${place.id}')">詳細を見る</button>
+                </div>` : ''}
             </div>
         </div>
     `).join('');
@@ -250,21 +303,15 @@ function showDetailModal(placeId) {
         <div class="modal-image">
             ${place.photo ? `<img src="${place.photo}" alt="${place.name}" onerror="this.style.display='none'">` : '🏞️'}
         </div>
-        <h2>${place.name}</h2>
+        <h2>${selectedLevel === 'hard' ? '？？？' : place.name}</h2>
         <p>${place.detail}</p>
         
         <div class="modal-actions" style="display: flex; gap: 15px; margin-top: 30px; justify-content: center;">
-            <button id="btn-close-modal" class="btn btn-secondary">カードを閉じる</button>
             <button id="btn-confirm-selection" class="btn btn-primary">確定する</button>
         </div>
     `;
     
     modal.classList.add('active');
-    
-    // 「カードを閉じる」ボタンのイベント
-    document.getElementById('btn-close-modal').addEventListener('click', () => {
-        modal.classList.remove('active');
-    });
     
     // 「確定する」ボタンのイベント
     document.getElementById('btn-confirm-selection').addEventListener('click', () => {
@@ -482,11 +529,13 @@ function restart() {
     localStorage.removeItem('selectedCustomerId');
     localStorage.removeItem('currentCategoryIndex');
     localStorage.removeItem('selectedPlaces');
+    localStorage.removeItem('selectedLevel');
     
     // 変数リセット
     selectedCustomer = null;
     selectedPlaces = {};
     currentCategoryIndex = 0;
+    selectedLevel = 'normal';
     
     // スタート画面へ
     showHomeScreen();
